@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>TheForgottenEra More</title>
+    <style>
+        header {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #00000038;
+            color: white;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .image-description {
+            margin: 40px 0;
+            text-align: center;
+            color: white;
+        }
+        .divider {
+            border-top: 2px solid #6b0000;
+            margin: 20px 0;
+        }
+        /* Modal Styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+            color: black;
+        }
+        .close-modal {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close-modal:hover,
+        .close-modal:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">TheForgottenEra</a>
+        <nav>
+            <a href="about.html">About</a>  
+            <a href="more.html">More</a> 
+            <a href="#" class="open-modal">Contact</a>
+        </nav>
+    </header>
+
+    <section class="container mt-5">
+        <h2 class="text-center text-white">More About The Forgotten Era</h2>
+
+        <div class="image-description">
+            <img src="boss.png" alt="Description of Image 1" class="img-fluid">
+            <p>"A fallen king, eternally vigilant, guards the entrance to this hell even after death, preventing any creature from entering and escaping the dark depths he protects."</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="image-description">
+            <img src="throne.png" alt="Description of Image 2" class="img-fluid">
+            <p>𝓗𝓮'𝓼 𝓷𝓸𝓽 𝓻𝓮𝓪𝓵, 𝓻𝓾𝓷</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="image-description">
+            <img src="snow.png" alt="Description of Image 3" class="img-fluid">
+            <p>The icy snow blankets the ground, the atmosphere freezes, making each breath a struggle. Treacherous lands beneath my feet... What could be lurking within the swirling blizzard?</p>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close-modal">&times;</a>
+            <h3>Contact Us</h3>
+            <p>If you have any questions or just want to buy a tester, feel free to reach out to us:</p>
+            <p><strong>Email:</strong> contact@theforgottenera.com</p>
+            <p><strong>Phone:</strong> +55 68 99202 9890</p>
+            <p><strong>Address:</strong> 123 Forgotten Street, Ancient City</p>
+
+            <h3>Follow Us:</h3>
+            <p>
+                <a href="https://discord.gg/NdGvUBGUTx" target="_blank">Discord</a> 
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Get modal element
+        var modal = document.getElementById("contact-modal");
+        var openModal = document.querySelector(".open-modal");
+        var closeModal = document.querySelector(".close-modal");
+
+        // Open modal
+        openModal.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // Close modal
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

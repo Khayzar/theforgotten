@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #ff0000, #000000); /* Gradient from red to black */
+    color: #ffffff; /* White text for readability */
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #ffcc00; /* Gold color for the logo */
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffcc00; /* Gold on hover */
+    border-bottom: 3px solid #ffcc00; /* Gold underline on hover */
+}
+
+/* Section styles */
+section {
+    min-height: 100vh;
+    padding: 10rem 9%; /* More padding for better spacing */
+}
+
+.bestiary-entry {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: rgba(37, 4, 4, 0.8); /* Semi-transparent dark red */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.bestiary-entry h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffcc00; /* Gold color for headings */
+}
+
+.bestiary-entry p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Content of the modal */
+.modal-content {
+    background-color: rgb(37, 4, 4);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+    color: #ffffff; 
+}
+
+/* Close button */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: #ffcc00; /* Gold color for close button */
+    text-decoration: none;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: black;
+    }
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .menu-toggle.active + nav {
+        display: flex;
+    }
+    nav a {
+        margin: 1rem 0;
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 1px solid rgb(55, 0, 0);
+    }
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #000000; /* Black background */
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #ffcc00; /* Gold color for button text */
+    border: 2px solid #ffcc00; /* Gold border */
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffcc00; /* Gold on hover */
+    color: black; /* Black text on hover */
+}

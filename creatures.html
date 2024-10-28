@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>TheForgottenEra Bestiary</title>
+    <style>
+        header {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #00000038;
+            color: white;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .creature-card {
+            background-color: #2c0000;
+            color: white;
+            border: 2px solid #4600006c;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .creature-card:hover {
+            transform: scale(1.05);
+        }
+        .creature-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .creature-info {
+            padding: 20px;
+        }
+        .section-divider {
+            border-top: 3px solid #6b0000;
+            margin: 40px 0;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .section-divider h3 {
+            position: relative;
+            top: -15px;
+            background: #00000038;
+            display: inline-block;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">TheForgottenEra</a>
+        <nav>
+            <a href="about.html">About</a>  
+            <a href="more.html">More</a> 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="container mt-5">
+        <h2 class="text-center text-white">Bestiary</h2>
+
+        <!-- Creature Slots -->
+        <div class="row">
+            <!-- Creature Slot 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <img src="caveyapy.png" alt="Creature 1" class="creature-image">
+                    <div class="creature-info">
+                        <h4>Cave Yapy</h4>
+                        <p>A small and adorable creature that resides in deep caves. The Cave Yapy has a cute and peculiar appearance, featuring large eyes and a soft glow that aids in underground exploration. Its diet consists of minerals, making it an excellent guide in the depths as it searches for precious stones. Despite its harmless appearance, its bite is powerful, allowing it to crush hard minerals and stones for sustenance.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Creature Slot 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <img src="silencecry.png" alt="Creature 2" class="creature-image">
+                    <div class="creature-info">
+                        <h4>Silence Cry</h4>
+                        <p>A sinister creature that thrives in darkness, Silence Cry is known for its stealthy nature and eerie presence. Lacking eyes, it navigates its surroundings through acute hearing, able to detect the faintest of sounds. This enigmatic being is often associated with abandoned castles and shadowy caves, where rumors swirl about the haunting cries that echo through the air. Many believe these sounds are the manifestations of Silence Cry, invoking a sense of dread in those who dare to wander too close to its lair. Its ability to blend seamlessly into the shadows makes it a formidable predator, lurking just out of sight, waiting for the right moment to strike.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Creature Slot 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <img src="tarrasque.png" alt="Creature 3" class="creature-image">
+                    <div class="creature-info">
+                        <h4>Tarrasque</h4>
+                        <p>The Tarrasque is a legendary behemoth of terrifying proportions, often described as a massive, dinosaur-like creature with armored plates covering its body. This ancient monstrosity is known for its near-invulnerability, with tough skin that can withstand the mightiest of attacks. Its immense size and strength make it a force of nature, capable of leveling cities and instilling fear in the hearts of even the bravest adventurers.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Creature Slot 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <img src="dragon.png" alt="Creature 4" class="creature-image">
+                    <div class="creature-info">
+                        <h4>Ancient Great Dragon</h4>
+                        <p>The Ancient Great Dragon is a majestic and powerful creature, revered and feared across the realms. With scales that shimmer in every hue, this colossal being embodies the essence of magic and elemental fury. Its wings, vast enough to cast shadows over entire landscapes, allow it to soar gracefully through the skies, instilling awe in all who witness its flight.
+
+                            Legends speak of the Ancient Great Dragon as a guardian of ancient knowledge and treasures, often found resting atop mountains or hidden within the depths of enchanted forests. Its wisdom is as profound as its strength, and it is known to possess the ability to manipulate the elements—breathing fire, ice, lightning, or even poison, depending on its elemental affinity.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Creature Slot 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <img src="centipode.png" alt="Creature 5" class="creature-image">
+                    <div class="creature-info">
+                        <h4>Centipede Sand Crawler</h4>
+                        <p>The Centipede Sand Crawler is a fearsome desert-dwelling creature characterized by its elongated, segmented body and numerous legs that enable it to navigate the shifting sands with incredible speed and agility. This predator is known for its sharp mandibles, capable of piercing through tough exoskeletons of its prey. Utilizing its keen sense of vibration, the Sand Crawler can detect movements above and below the sand, making it a stealthy hunter. Legends say that the cries of the Centipede Sand Crawler echo through the dunes, striking fear into the hearts of those who venture too close to its territory.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Creature Slot 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <img src="scorpion.png" alt="Creature 6" class="creature-image">
+                    <div class="creature-info">
+                        <h4>Dune Scorpion</h4>
+                        <p>The Dune Scorpion is a formidable desert predator known for its striking appearance and lethal hunting prowess. With a robust, armored exoskeleton that blends seamlessly with the sandy terrain, this creature can lie in wait for unsuspecting prey. Its large pincers are not only powerful for capturing prey but also serve as a defense mechanism against larger threats. The Dune Scorpion's venomous sting can incapacitate its victims swiftly, ensuring a quick meal. As night falls, it emerges from its burrow to hunt, guided by its acute sense of vibrations and heat, making it a stealthy and efficient hunter of the desert.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Divider for Playable Races -->
+        <div class="section-divider">
+            <h3>Playable Races</h3>
+        </div>
+
+        <div class="row">
+            <!-- Elf -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Elf</h4>
+                        <p>Graceful and skilled, elves embody a deep connection to nature and a culture of harmony and wisdom.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Druid -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Druid</h4>
+                        <p>A nature-focused mystical practitioner with profound wisdom and magical abilities.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tiefling -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Tiefling</h4>
+                        <p>A devilishly unique humanoid with infernal heritage and distinct physical traits.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Aasimar -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Aasimar</h4>
+                        <p>A celestial-blooded being with radiant beauty and divine powers.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Goliath -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Goliath</h4>
+                        <p>Goliaths are towering and resilient beings with immense strength and endurance, hailing from harsh mountainous regions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Dwarf -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Dwarf</h4>
+                        <p>Sturdy craftsmen, known for their resilience, mining expertise, and love for riches and craftsmanship.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Orc -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Orc</h4>
+                        <p>A formidable and fierce warrior known for their strength and primal nature.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Goblin -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Goblin</h4>
+                        <p>A mischievous and cunning creature known for its small stature and knack for causing trouble.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Myconid -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Myconid</h4>
+                        <p>A sentient fungal creature with a unique connection to the earth and a complex social structure.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Satyr -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Satyr</h4>
+                        <p>A mischievous woodland creature with a half-human, half-goat appearance, known for its playful nature and love of revelry.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Harengon -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Harengon</h4>
+                        <p>An anthropomorphic creature resembling a rabbit, known for their speed and cunning nature.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tabaxi -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Tabaxi</h4>
+                        <p>A feline humanoid known for their agility, curiosity, and innate love for adventure.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Draconato (Dragonborn) -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Dragonborn</h4>
+                        <p>A humanoid creature with dragon-like traits and abilities.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tortle -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Tortle</h4>
+                        <p>A humanoid turtle-like creature with a strong natural shell and a peaceful disposition.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- HexBlood -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>HexBlood</h4>
+                        <p>A cursed individual with inherent magical powers and a deep connection to the supernatural.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Vanara -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Vanara</h4>
+                        <p>An agile and intelligent anthropomorphic monkey-like creature with a strong affinity for nature.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Khaahz -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Khaahz</h4>
+                        <p>A humanoid creature with a stone mask and incredible resilience.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Reborn -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>Reborn</h4>
+                        <p>A being who has returned from the edge of death with fragmented memories and unique powers.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- EmptyShaper -->
+            <div class="col-md-4 mb-4">
+                <div class="creature-card">
+                    <div class="creature-info">
+                        <h4>EmptyShaper</h4>
+                        <p>A mystical entity capable of molding its essence to blend with the shadows and harness arcane energies.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the same structure for each race: Druid, Tiefling, etc. -->
+            <!-- Continue adding races based on the provided list -->
+        </div>
+    </section>
+        
+        <!-- Contact Section -->
+        <div id="contact" class="section-divider">
+            <h3>Contact Us</h3>
+        </div>
+        <div class="container">
+            <form action="your-backend-endpoint" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-eW5DQK3y64rHf4Dg9RJjv3GbbNOY5IB5vnSc+p2YkNJQRobRS96F1pcY9D9jj4dS" crossorigin="anonymous"></script>
+</body>
+</html>
